@@ -1,602 +1,222 @@
-# 🎭 The Agency: AI Specialists Ready to Transform Your Workflow
+# AI Sustainability Consulting Firm
 
-> **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+> **A complete AI sustainability consulting firm at your fingertips** — from Scope 3 data detectives to EPR compliance architects, net zero roadmap builders to greenwashing auditors. 38 specialist agents across 8 practice areas. Each one knows the GHG Protocol cold, cites the right regulation, and won't let a claim go unsubstantiated.
 
-[![GitHub stars](https://img.shields.io/github/stars/msitarzewski/agency-agents?style=social)](https://github.com/msitarzewski/agency-agents)
+[![GitHub stars](https://img.shields.io/github/stars/MikeTannenbaum/ai-sustainability-consulting?style=social)](https://github.com/MikeTannenbaum/ai-sustainability-consulting)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/msitarzewski)
+[![Forked from](https://img.shields.io/badge/Forked%20from-msitarzewski%2Fagency--agents-blue)](https://github.com/msitarzewski/agency-agents)
 
 ---
 
-## 🚀 What Is This?
+## What Is This?
 
-Born from a Reddit thread and months of iteration, **The Agency** is a growing collection of meticulously crafted AI agent personalities. Each agent is:
+**AI Sustainability Consulting** is a complete collection of AI agent personas for sustainability, ESG, and climate work — built on the same agent architecture as [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents), adapted from a digital agency into a sustainability consulting firm of the caliber of Anthesis, ERM, BSR, Quantis, and Ramboll.
 
-- **🎯 Specialized**: Deep expertise in their domain (not generic prompt templates)
-- **🧠 Personality-Driven**: Unique voice, communication style, and approach
-- **📋 Deliverable-Focused**: Real code, processes, and measurable outcomes
-- **✅ Production-Ready**: Battle-tested workflows and success metrics
+Each agent is:
 
-**Think of it as**: Assembling your dream team, except they're AI specialists who never sleep, never complain, and always deliver.
+- **Technically grounded**: Real frameworks — GHG Protocol, ESRS, SBTi, TCFD, TNFD, ISO 14040, FTC Green Guides
+- **Regulation-specific**: Cites the right law, provision, and version — not vague references to "ESG frameworks"
+- **Deliverable-focused**: Produces actual outputs — GHG inventories, CDP responses, CSRD disclosures, supplier codes of conduct, board briefings
+- **Greenwashing-resistant**: Every external claim goes through the Greenwashing Auditor before it leaves the building
+- **Orchestrated**: MERIDIAN coordinates the full consulting engagement — from intake through final disclosure
+
+**Think of it as**: A sustainability consulting team that never sleeps, cites its sources, and refuses to let unsubstantiated claims go public.
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
-### Option 1: Use with Claude Code (Recommended)
+### Option 1: Claude Code (Recommended)
 
 ```bash
-# Copy agents to your Claude Code directory
-cp -r agency-agents/* ~/.claude/agents/
-
-# Now activate any agent in your Claude Code sessions:
-# "Hey Claude, activate Frontend Developer mode and help me build a React component"
-```
-
-### Option 2: Use as Reference
-
-Each agent file contains:
-- Identity & personality traits
-- Core mission & workflows
-- Technical deliverables with code examples
-- Success metrics & communication style
-
-Browse the agents below and copy/adapt the ones you need!
-
-### Option 3: Use with Other Tools (Cursor, Aider, Windsurf, Gemini CLI, OpenCode)
-
-```bash
-# Step 1 -- generate integration files for all supported tools
-./scripts/convert.sh
-
-# Step 2 -- install interactively (auto-detects what you have installed)
-./scripts/install.sh
-
-# Or target a specific tool directly
-./scripts/install.sh --tool cursor
-./scripts/install.sh --tool aider
-./scripts/install.sh --tool windsurf
-```
-
-See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for full details.
-
----
-
-## 🎨 The Agency Roster
-
-### 💻 Engineering Division
-
-Building the future, one commit at a time.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎨 [Frontend Developer](engineering/engineering-frontend-developer.md) | React/Vue/Angular, UI implementation, performance | Modern web apps, pixel-perfect UIs, Core Web Vitals optimization |
-| 🏗️ [Backend Architect](engineering/engineering-backend-architect.md) | API design, database architecture, scalability | Server-side systems, microservices, cloud infrastructure |
-| 📱 [Mobile App Builder](engineering/engineering-mobile-app-builder.md) | iOS/Android, React Native, Flutter | Native and cross-platform mobile applications |
-| 🤖 [AI Engineer](engineering/engineering-ai-engineer.md) | ML models, deployment, AI integration | Machine learning features, data pipelines, AI-powered apps |
-| 🚀 [DevOps Automator](engineering/engineering-devops-automator.md) | CI/CD, infrastructure automation, cloud ops | Pipeline development, deployment automation, monitoring |
-| ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md) | Fast POC development, MVPs | Quick proof-of-concepts, hackathon projects, fast iteration |
-| 💎 [Senior Developer](engineering/engineering-senior-developer.md) | Laravel/Livewire, advanced patterns | Complex implementations, architecture decisions |
-| 🔒 [Security Engineer](engineering/engineering-security-engineer.md) | Threat modeling, secure code review, security architecture | Application security, vulnerability assessment, security CI/CD |
-
-### 🎨 Design Division
-
-Making it beautiful, usable, and delightful.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎯 [UI Designer](design/design-ui-designer.md) | Visual design, component libraries, design systems | Interface creation, brand consistency, component design |
-| 🔍 [UX Researcher](design/design-ux-researcher.md) | User testing, behavior analysis, research | Understanding users, usability testing, design insights |
-| 🏛️ [UX Architect](design/design-ux-architect.md) | Technical architecture, CSS systems, implementation | Developer-friendly foundations, implementation guidance |
-| 🎭 [Brand Guardian](design/design-brand-guardian.md) | Brand identity, consistency, positioning | Brand strategy, identity development, guidelines |
-| 📖 [Visual Storyteller](design/design-visual-storyteller.md) | Visual narratives, multimedia content | Compelling visual stories, brand storytelling |
-| ✨ [Whimsy Injector](design/design-whimsy-injector.md) | Personality, delight, playful interactions | Adding joy, micro-interactions, Easter eggs, brand personality |
-| 📷 [Image Prompt Engineer](design/design-image-prompt-engineer.md) | AI image generation prompts, photography | Photography prompts for Midjourney, DALL-E, Stable Diffusion |
-
-### 📢 Marketing Division
-
-Growing your audience, one authentic interaction at a time.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🚀 [Growth Hacker](marketing/marketing-growth-hacker.md) | Rapid user acquisition, viral loops, experiments | Explosive growth, user acquisition, conversion optimization |
-| 📝 [Content Creator](marketing/marketing-content-creator.md) | Multi-platform content, editorial calendars | Content strategy, copywriting, brand storytelling |
-| 🐦 [Twitter Engager](marketing/marketing-twitter-engager.md) | Real-time engagement, thought leadership | Twitter strategy, LinkedIn campaigns, professional social |
-| 📱 [TikTok Strategist](marketing/marketing-tiktok-strategist.md) | Viral content, algorithm optimization | TikTok growth, viral content, Gen Z/Millennial audience |
-| 📸 [Instagram Curator](marketing/marketing-instagram-curator.md) | Visual storytelling, community building | Instagram strategy, aesthetic development, visual content |
-| 🤝 [Reddit Community Builder](marketing/marketing-reddit-community-builder.md) | Authentic engagement, value-driven content | Reddit strategy, community trust, authentic marketing |
-| 📱 [App Store Optimizer](marketing/marketing-app-store-optimizer.md) | ASO, conversion optimization, discoverability | App marketing, store optimization, app growth |
-| 🌐 [Social Media Strategist](marketing/marketing-social-media-strategist.md) | Cross-platform strategy, campaigns | Overall social strategy, multi-platform campaigns |
-| 📕 [Xiaohongshu Specialist](marketing/marketing-xiaohongshu-specialist.md) | Lifestyle content, trend-driven strategy | Xiaohongshu growth, aesthetic storytelling, Gen Z audience |
-| 💬 [WeChat Official Account Manager](marketing/marketing-wechat-official-account.md) | Subscriber engagement, content marketing | WeChat OA strategy, community building, conversion optimization |
-| 🧠 [Zhihu Strategist](marketing/marketing-zhihu-strategist.md) | Thought leadership, knowledge-driven engagement | Zhihu authority building, Q&A strategy, lead generation |
-
-### 📊 Product Division
-
-Building the right thing at the right time.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md) | Agile planning, feature prioritization | Sprint planning, resource allocation, backlog management |
-| 🔍 [Trend Researcher](product/product-trend-researcher.md) | Market intelligence, competitive analysis | Market research, opportunity assessment, trend identification |
-| 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | User feedback analysis, insights extraction | Feedback analysis, user insights, product priorities |
-
-### 🎬 Project Management Division
-
-Keeping the trains running on time (and under budget).
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎬 [Studio Producer](project-management/project-management-studio-producer.md) | High-level orchestration, portfolio management | Multi-project oversight, strategic alignment, resource allocation |
-| 🐑 [Project Shepherd](project-management/project-management-project-shepherd.md) | Cross-functional coordination, timeline management | End-to-end project coordination, stakeholder management |
-| ⚙️ [Studio Operations](project-management/project-management-studio-operations.md) | Day-to-day efficiency, process optimization | Operational excellence, team support, productivity |
-| 🧪 [Experiment Tracker](project-management/project-management-experiment-tracker.md) | A/B tests, hypothesis validation | Experiment management, data-driven decisions, testing |
-| 👔 [Senior Project Manager](project-management/project-manager-senior.md) | Realistic scoping, task conversion | Converting specs to tasks, scope management |
-
-### 🧪 Testing Division
-
-Breaking things so users don't have to.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 📸 [Evidence Collector](testing/testing-evidence-collector.md) | Screenshot-based QA, visual proof | UI testing, visual verification, bug documentation |
-| 🔍 [Reality Checker](testing/testing-reality-checker.md) | Evidence-based certification, quality gates | Production readiness, quality approval, release certification |
-| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md) | Test evaluation, metrics analysis | Test output analysis, quality insights, coverage reporting |
-| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | Performance testing, optimization | Speed testing, load testing, performance tuning |
-| 🔌 [API Tester](testing/testing-api-tester.md) | API validation, integration testing | API testing, endpoint verification, integration QA |
-| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md) | Technology assessment, tool selection | Evaluating tools, software recommendations, tech decisions |
-| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md) | Process analysis, workflow improvement | Process optimization, efficiency gains, automation opportunities |
-| ♿ [Accessibility Auditor](testing/testing-accessibility-auditor.md) | WCAG auditing, assistive technology testing | Accessibility compliance, screen reader testing, inclusive design verification |
-
-### 🛟 Support Division
-
-The backbone of the operation.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 💬 [Support Responder](support/support-support-responder.md) | Customer service, issue resolution | Customer support, user experience, support operations |
-| 📊 [Analytics Reporter](support/support-analytics-reporter.md) | Data analysis, dashboards, insights | Business intelligence, KPI tracking, data visualization |
-| 💰 [Finance Tracker](support/support-finance-tracker.md) | Financial planning, budget management | Financial analysis, cash flow, business performance |
-| 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md) | System reliability, performance optimization | Infrastructure management, system operations, monitoring |
-| ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md) | Compliance, regulations, legal review | Legal compliance, regulatory requirements, risk management |
-| 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | C-suite communication, strategic summaries | Executive reporting, strategic communication, decision support |
-
-### 🥽 Spatial Computing Division
-
-Building the immersive future.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🏗️ [XR Interface Architect](spatial-computing/xr-interface-architect.md) | Spatial interaction design, immersive UX | AR/VR/XR interface design, spatial computing UX |
-| 💻 [macOS Spatial/Metal Engineer](spatial-computing/macos-spatial-metal-engineer.md) | Swift, Metal, high-performance 3D | macOS spatial computing, Vision Pro native apps |
-| 🌐 [XR Immersive Developer](spatial-computing/xr-immersive-developer.md) | WebXR, browser-based AR/VR | Browser-based immersive experiences, WebXR apps |
-| 🎮 [XR Cockpit Interaction Specialist](spatial-computing/xr-cockpit-interaction-specialist.md) | Cockpit-based controls, immersive systems | Cockpit control systems, immersive control interfaces |
-| 🍎 [visionOS Spatial Engineer](spatial-computing/visionos-spatial-engineer.md) | Apple Vision Pro development | Vision Pro apps, spatial computing experiences |
-| 🔌 [Terminal Integration Specialist](spatial-computing/terminal-integration-specialist.md) | Terminal integration, command-line tools | CLI tools, terminal workflows, developer tools |
-
-### 🎯 Specialized Division
-
-The unique specialists who don't fit in a box.
-
-| Agent | Specialty | When to Use |
-|-------|-----------|-------------|
-| 🎭 [Agents Orchestrator](specialized/agents-orchestrator.md) | Multi-agent coordination, workflow management | Complex projects requiring multiple agent coordination |
-| 📊 [Data Analytics Reporter](specialized/data-analytics-reporter.md) | Business intelligence, data insights | Deep data analysis, business metrics, strategic insights |
-| 🔍 [LSP/Index Engineer](specialized/lsp-index-engineer.md) | Language Server Protocol, code intelligence | Code intelligence systems, LSP implementation, semantic indexing |
-| 📥 [Sales Data Extraction Agent](specialized/sales-data-extraction-agent.md) | Excel monitoring, sales metric extraction | Sales data ingestion, MTD/YTD/Year End metrics |
-| 📈 [Data Consolidation Agent](specialized/data-consolidation-agent.md) | Sales data aggregation, dashboard reports | Territory summaries, rep performance, pipeline snapshots |
-| 📬 [Report Distribution Agent](specialized/report-distribution-agent.md) | Automated report delivery | Territory-based report distribution, scheduled sends |
-| 🔐 [Agentic Identity & Trust Architect](specialized/agentic-identity-trust.md) | Agent identity, authentication, trust verification | Multi-agent identity systems, agent authorization, audit trails |
-
----
-
-## 🎯 Real-World Use Cases
-
-### Scenario 1: Building a Startup MVP
-
-**Your Team**:
-1. 🎨 **Frontend Developer** - Build the React app
-2. 🏗️ **Backend Architect** - Design the API and database
-3. 🚀 **Growth Hacker** - Plan user acquisition
-4. ⚡ **Rapid Prototyper** - Fast iteration cycles
-5. 🔍 **Reality Checker** - Ensure quality before launch
-
-**Result**: Ship faster with specialized expertise at every stage.
-
----
-
-### Scenario 2: Marketing Campaign Launch
-
-**Your Team**:
-1. 📝 **Content Creator** - Develop campaign content
-2. 🐦 **Twitter Engager** - Twitter strategy and execution
-3. 📸 **Instagram Curator** - Visual content and stories
-4. 🤝 **Reddit Community Builder** - Authentic community engagement
-5. 📊 **Analytics Reporter** - Track and optimize performance
-
-**Result**: Multi-channel coordinated campaign with platform-specific expertise.
-
----
-
-### Scenario 3: Enterprise Feature Development
-
-**Your Team**:
-1. 👔 **Senior Project Manager** - Scope and task planning
-2. 💎 **Senior Developer** - Complex implementation
-3. 🎨 **UI Designer** - Design system and components
-4. 🧪 **Experiment Tracker** - A/B test planning
-5. 📸 **Evidence Collector** - Quality verification
-6. 🔍 **Reality Checker** - Production readiness
-
-**Result**: Enterprise-grade delivery with quality gates and documentation.
-
----
-
-### Scenario 4: Full Agency Product Discovery
-
-**Your Team**: All 8 divisions working in parallel on a single mission.
-
-See the **[Nexus Spatial Discovery Exercise](examples/nexus-spatial-discovery.md)** -- a complete example where 8 agents (Product Trend Researcher, Backend Architect, Brand Guardian, Growth Hacker, Support Responder, UX Researcher, Project Shepherd, and XR Interface Architect) were deployed simultaneously to evaluate a software opportunity and produce a unified product plan covering market validation, technical architecture, brand strategy, go-to-market, support systems, UX research, project execution, and spatial UI design.
-
-**Result**: Comprehensive, cross-functional product blueprint produced in a single session. [More examples](examples/).
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-### Add a New Agent
-
-1. Fork the repository
-2. Create a new agent file in the appropriate category
-3. Follow the agent template structure:
-   - Frontmatter with name, description, color
-   - Identity & Memory section
-   - Core Mission
-   - Critical Rules (domain-specific)
-   - Technical Deliverables with examples
-   - Workflow Process
-   - Success Metrics
-4. Submit a PR with your agent
-
-### Improve Existing Agents
-
-- Add real-world examples
-- Enhance code samples
-- Update success metrics
-- Improve workflows
-
-### Share Your Success Stories
-
-Have you used these agents successfully? Share your story in the [Discussions](https://github.com/msitarzewski/agency-agents/discussions)!
-
----
-
-## 📖 Agent Design Philosophy
-
-Each agent is designed with:
-
-1. **🎭 Strong Personality**: Not generic templates - real character and voice
-2. **📋 Clear Deliverables**: Concrete outputs, not vague guidance
-3. **✅ Success Metrics**: Measurable outcomes and quality standards
-4. **🔄 Proven Workflows**: Step-by-step processes that work
-5. **💡 Learning Memory**: Pattern recognition and continuous improvement
-
----
-
-## 🎁 What Makes This Special?
-
-### Unlike Generic AI Prompts:
-- ❌ Generic "Act as a developer" prompts
-- ✅ Deep specialization with personality and process
-
-### Unlike Prompt Libraries:
-- ❌ One-off prompt collections
-- ✅ Comprehensive agent systems with workflows and deliverables
-
-### Unlike AI Tools:
-- ❌ Black box tools you can't customize
-- ✅ Transparent, forkable, adaptable agent personalities
-
----
-
-## 🎨 Agent Personality Highlights
-
-> "I don't just test your code - I default to finding 3-5 issues and require visual proof for everything."
->
-> -- **Evidence Collector** (Testing Division)
-
-> "You're not marketing on Reddit - you're becoming a valued community member who happens to represent a brand."
->
-> -- **Reddit Community Builder** (Marketing Division)
-
-> "Every playful element must serve a functional or emotional purpose. Design delight that enhances rather than distracts."
->
-> -- **Whimsy Injector** (Design Division)
-
-> "Let me add a celebration animation that reduces task completion anxiety by 40%"
->
-> -- **Whimsy Injector** (during a UX review)
-
----
-
-## 📊 Stats
-
-- 🎭 **61 Specialized Agents** across 9 divisions
-- 📝 **10,000+ lines** of personality, process, and code examples
-- ⏱️ **Months of iteration** from real-world usage
-- 🌟 **Battle-tested** in production environments
-- 💬 **50+ requests** in first 12 hours on Reddit
-
----
-
-## 🔌 Multi-Tool Integrations
-
-The Agency works natively with Claude Code, and ships conversion + install scripts so you can use the same agents across every major agentic coding tool.
-
-### Supported Tools
-
-- **[Claude Code](https://claude.ai/code)** — native `.md` agents, no conversion needed → `~/.claude/agents/`
-- **[Antigravity](https://github.com/google-gemini/antigravity)** — `SKILL.md` per agent → `~/.gemini/antigravity/skills/`
-- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — extension + `SKILL.md` files → `~/.gemini/extensions/agency-agents/`
-- **[OpenCode](https://opencode.ai)** — `.md` agent files → `.opencode/agent/`
-- **[Cursor](https://cursor.sh)** — `.mdc` rule files → `.cursor/rules/`
-- **[Aider](https://aider.chat)** — single `CONVENTIONS.md` → `./CONVENTIONS.md`
-- **[Windsurf](https://codeium.com/windsurf)** — single `.windsurfrules` → `./.windsurfrules`
-
----
-
-### ⚡ Quick Install
-
-**Step 1 -- Generate integration files:**
-```bash
-./scripts/convert.sh
-```
-
-**Step 2 -- Install (interactive, auto-detects your tools):**
-```bash
-./scripts/install.sh
-```
-
-The installer scans your system for installed tools, shows a checkbox UI, and lets you pick exactly what to install:
-
-```
-  +------------------------------------------------+
-  |   The Agency -- Tool Installer                 |
-  +------------------------------------------------+
-
-  System scan: [*] = detected on this machine
-
-  [x]  1)  [*]  Claude Code     (claude.ai/code)
-  [x]  2)  [*]  Antigravity     (~/.gemini/antigravity)
-  [ ]  3)  [ ]  Gemini CLI      (gemini extension)
-  [ ]  4)  [ ]  OpenCode        (opencode.ai)
-  [x]  5)  [*]  Cursor          (.cursor/rules)
-  [ ]  6)  [ ]  Aider           (CONVENTIONS.md)
-  [ ]  7)  [ ]  Windsurf        (.windsurfrules)
-
-  [1-7] toggle   [a] all   [n] none   [d] detected
-  [Enter] install   [q] quit
-```
-
-**Or install a specific tool directly:**
-```bash
-./scripts/install.sh --tool cursor
-./scripts/install.sh --tool opencode
-./scripts/install.sh --tool antigravity
-```
-
-**Non-interactive (CI/scripts):**
-```bash
-./scripts/install.sh --no-interactive --tool all
-```
-
----
-
-### Tool-Specific Instructions
-
-<details>
-<summary><strong>Claude Code</strong></summary>
-
-Agents are copied directly from the repo into `~/.claude/agents/` -- no conversion needed.
-
-```bash
+# Clone the repo
+git clone https://github.com/MikeTannenbaum/ai-sustainability-consulting.git
+
+# Install all agents to Claude Code
+cd ai-sustainability-consulting
 ./scripts/install.sh --tool claude-code
 ```
 
-Then activate in Claude Code:
+Then in Claude Code:
+
 ```
-Use the Frontend Developer agent to review this component.
+/agents
 ```
 
-See [integrations/claude-code/README.md](integrations/claude-code/README.md) for details.
-</details>
+Select any specialist agent to begin. For a full consulting engagement, start with MERIDIAN Orchestrator.
 
-<details>
-<summary><strong>Antigravity (Gemini)</strong></summary>
+### Option 2: Manual Installation
 
-Each agent becomes a skill in `~/.gemini/antigravity/skills/agency-<slug>/`.
+Copy any agent `.md` file from the division directories into `~/.claude/agents/`. Each file is a self-contained agent persona — no dependencies.
+
+### Option 3: Other AI Tools
 
 ```bash
-./scripts/install.sh --tool antigravity
-```
-
-Activate in Gemini with Antigravity:
-```
-@agency-frontend-developer review this React component
-```
-
-See [integrations/antigravity/README.md](integrations/antigravity/README.md) for details.
-</details>
-
-<details>
-<summary><strong>Gemini CLI</strong></summary>
-
-Installs as a Gemini CLI extension with 61 skills + a manifest.
-
-```bash
-./scripts/install.sh --tool gemini-cli
-```
-
-See [integrations/gemini-cli/README.md](integrations/gemini-cli/README.md) for details.
-</details>
-
-<details>
-<summary><strong>OpenCode</strong></summary>
-
-Agents are placed in `.opencode/agent/` in your project root (project-scoped).
-
-```bash
-cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool opencode
-```
-
-Or install globally:
-```bash
-mkdir -p ~/.config/opencode/agent
-cp integrations/opencode/agent/*.md ~/.config/opencode/agent/
-```
-
-Activate in OpenCode:
-```
-Use the Backend Architect agent to design this API.
-```
-
-See [integrations/opencode/README.md](integrations/opencode/README.md) for details.
-</details>
-
-<details>
-<summary><strong>Cursor</strong></summary>
-
-Each agent becomes a `.mdc` rule file in `.cursor/rules/` of your project.
-
-```bash
-cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool cursor
-```
-
-Rules are auto-applied when Cursor detects them in the project. Reference them explicitly:
-```
-Use the @security-engineer rules to review this code.
-```
-
-See [integrations/cursor/README.md](integrations/cursor/README.md) for details.
-</details>
-
-<details>
-<summary><strong>Aider</strong></summary>
-
-All agents are compiled into a single `CONVENTIONS.md` file that Aider reads automatically.
-
-```bash
-cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool aider
-```
-
-Then reference agents in your Aider session:
-```
-Use the Frontend Developer agent to refactor this component.
-```
-
-See [integrations/aider/README.md](integrations/aider/README.md) for details.
-</details>
-
-<details>
-<summary><strong>Windsurf</strong></summary>
-
-All agents are compiled into `.windsurfrules` in your project root.
-
-```bash
-cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool windsurf
-```
-
-Reference agents in Windsurf's Cascade:
-```
-Use the Reality Checker agent to verify this is production ready.
-```
-
-See [integrations/windsurf/README.md](integrations/windsurf/README.md) for details.
-</details>
-
----
-
-### Regenerating After Changes
-
-When you add new agents or edit existing ones, regenerate all integration files:
-
-```bash
-./scripts/convert.sh        # regenerate all
-./scripts/convert.sh --tool cursor   # regenerate just one tool
+# Convert for your preferred tool
+./scripts/convert.sh --tool cursor    # Cursor rules
+./scripts/convert.sh --tool windsurf  # Windsurf rules
+./scripts/convert.sh --tool gemini-cli # Gemini CLI
+./scripts/convert.sh --tool aider     # Aider CONVENTIONS.md
+./scripts/convert.sh --tool all       # All tools
 ```
 
 ---
 
-## 🗺️ Roadmap
+## The Agent Roster
 
-- [ ] Interactive agent selector web tool
-- [x] Multi-agent workflow examples -- see [examples/](examples/)
-- [x] Multi-tool integration scripts (Claude Code, Antigravity, Gemini CLI, OpenCode, Cursor, Aider, Windsurf)
-- [ ] Video tutorials on agent design
-- [ ] Community agent marketplace
-- [ ] Agent "personality quiz" for project matching
-- [ ] "Agent of the Week" showcase series
+### 🌡️ Climate Division (`climate/`)
+
+| Agent | What They Do |
+|---|---|
+| **GHG Inventory Specialist** | Scope 1/2/3 accounting per GHG Protocol; activity data collection; emission factor selection; verification prep |
+| **Science-Based Targets Advisor** | SBTi near-term (1.5°C) and net zero targets; FLAG, SBTN, SBTi validation pathway |
+| **Net Zero Strategist** | Decarbonization roadmap design; MACC analysis; residual emissions strategy; interim milestones |
+| **Carbon Markets Analyst** | VCM and compliance market navigation; credit quality (ICVCM CCPs); VCMI claims code; carbon pricing exposure |
+| **Climate Risk Analyst** | TCFD 4-pillar disclosure; NGFS/IEA scenario analysis; physical and transition risk quantification; ISSB S2 |
+
+### ⚖️ Compliance Division (`compliance/`)
+
+| Agent | What They Do |
+|---|---|
+| **EPR Specialist** | CA SB 54, OR HB 2592, EU PPWR, PRO registration, eco-modulation fee calculation, How2Recycle |
+| **CSRD Advisor** | All 12 ESRS standards, double materiality methodology, IRO identification, XBRL tagging, assurance |
+| **EU Taxonomy Analyst** | Technical screening criteria, DNSH assessment, MSS verification, Article 8 KPIs (turnover/capex/opex) |
+| **SEC Climate Expert** | CA SB 253/261, SEC Rule 33-11275, filer category thresholds, Scope 3 safe harbor, comment letter patterns |
+| **Permit Navigator** | NEPA/EIS/EA/CE, Clean Air Act Title V/PSD/NSR, Section 404, RCRA, EJScreen, climate permitting |
+
+### 📊 Reporting Division (`reporting/`)
+
+| Agent | What They Do |
+|---|---|
+| **ESG Report Writer** | GRI Standards, ISSB IFRS S1/S2, SASB industry standards, integrated reporting (IIRC <IR> Framework) |
+| **CDP Specialist** | CDP Climate/Water/Forests questionnaire completion; A-list scoring strategy; year-over-year score improvement |
+| **Materiality Facilitator** | Financial, impact, and double materiality; IRO identification; stakeholder surveys; ESRS DMA methodology |
+| **ESG Data Analyst** | Data collection architecture, DQS scoring, assurance readiness (ISAE 3000), XBRL, ESG platform selection |
+
+### ⚡ Energy & Resources Division (`energy-resources/`)
+
+| Agent | What They Do |
+|---|---|
+| **Energy Efficiency Auditor** | ASHRAE Level 1/2/3 audits, ISO 50001, EnergyPlus/eQUEST modeling, ECMs, EUI benchmarking, ENERGY STAR |
+| **Renewable Energy Advisor** | Physical/virtual PPAs, RECs/GOs, GHG Protocol Scope 2 guidance, 24/7 CFE, RE100 pathway |
+| **Circular Economy Strategist** | 10-R hierarchy, Ellen MacArthur principles, design for circularity, MFA, circular business model design |
+| **Water & Waste Specialist** | WRI Aqueduct, AWS Standard, CDP Water, GRI 303/306, RCRA, zero waste strategy, TRUE certification |
+
+### 🚚 Supply Chain Division (`supply-chain/`)
+
+| Agent | What They Do |
+|---|---|
+| **Scope 3 Analyst** | All 15 GHG Protocol Scope 3 categories; spend-based, hybrid, and activity-based methodologies; EEIO |
+| **LCA Specialist** | ISO 14040/44 full LCA, ISO 14067 PCF, ReCiPe/CML impact methods, SimaPro/OpenLCA, EPD development |
+| **Supplier Engagement Specialist** | EcoVadis, CDP Supply Chain, SBTi supplier engagement targets, supplier questionnaire design, capacity building |
+| **Human Rights Advisor** | UNGPs, OECD 6-step due diligence, CSDDD Directive 2024/1760, LkSG, UFLPA, ILO core conventions |
+
+### 🌿 Nature & Biodiversity Division (`nature-biodiversity/`)
+
+| Agent | What They Do |
+|---|---|
+| **TNFD Strategist** | TNFD v1.0 LEAP approach, 14 recommended disclosures, 8 core metrics, SBTN 5-step, GBF Target 15, IBAT |
+| **Nature-Based Solutions Advisor** | IUCN Global Standard, REDD+/IFM/ARR methodologies, blue carbon, soil carbon, Oxford Principles, ISO 14068 |
+| **Land Use Analyst** | EUDR (Regulation 2023/1115), HCS/HCV methodology, NDPE, high-risk commodity sourcing, Satelligence, Trase |
+
+### 🎯 Strategy & Engagement Division (`strategy-engagement/`)
+
+| Agent | What They Do |
+|---|---|
+| **Sustainability Strategy Advisor** | Materiality-to-strategy bridge, board governance, ESG integration, sustainability KPI design, ESG rating improvement |
+| **Stakeholder Specialist** | Stakeholder mapping and prioritization, FPIC methodology, AA1000 SES, UNGPs Pillar 3, grievance mechanisms |
+| **Impact Analyst** | Theory of change, IRIS+ metrics, SROI methodology, SDG mapping, BVCM distinction from compliance offsetting |
+| **Greenwashing Auditor** | FTC Green Guides, EU Green Claims Directive, ISO 14021, VCMI Claims Code, SEC enforcement — the last line of defense |
+
+### 🔧 Specialized Division (`specialized/`)
+
+| Agent | What They Do |
+|---|---|
+| **MERIDIAN Orchestrator** | Full engagement coordination across all phases — Intake → Baseline → Materiality → Strategy → Disclosure |
+| **Sustainability Data Consolidator** | Multi-entity consolidation, GHG Protocol boundary approaches, M&A handling, restatements, assurance package prep |
+| **Client Deliverable Generator** | Audience-specific outputs for Board/CFO/CSO/Legal/Investors/Comms — without losing technical accuracy |
 
 ---
 
-## 🌐 Community Translations & Localizations
+## MERIDIAN — The Engagement Operating System
 
-Community-maintained translations and regional adaptations. These are independently maintained -- see each repo for coverage and version compatibility.
+**MERIDIAN** (Multi-domain Expert Routing for Integrated Disclosure, Analysis, and Net-zero Impact) coordinates the full sustainability consulting engagement. It is not just an orchestration prompt — it is a **deployment doctrine** that defines:
 
-| Language | Maintainer | Link | Notes |
-|----------|-----------|------|-------|
-| 🇨🇳 简体中文 (zh-CN) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) | 26 translated agents + 4 China-market agents |
+- **5-phase engagement model**: Intake → Baseline Assessment → Materiality → Strategy & Roadmap → Disclosure & Reporting
+- **Quality gates** between every phase — no phase advances without documented evidence
+- **Agent spawning logic** — which agents activate in which sequence based on engagement type
+- **Handoff protocols** — structured context transfer so no agent starts cold
+- **Greenwashing firewall** — Greenwashing Auditor clearance required before any external deliverable
 
-Want to add a translation? Open an issue and we'll link it here.
+### MERIDIAN Engagement Modes
 
----
+| Mode | Use Case | Phases | Agents |
+|---|---|---|---|
+| **MERIDIAN-Full** | Complete sustainability engagement (GHG inventory → CSRD disclosure) | All 5 | 20–32 |
+| **MERIDIAN-Sprint** | Single-focus engagement (e.g., SBTi target setting, CDP submission) | 2–3 | 8–15 |
+| **MERIDIAN-Micro** | Specific deliverable (e.g., board briefing, greenwashing audit) | 1 | 2–5 |
 
-## 📜 License
+### Activate MERIDIAN-Full
 
-MIT License - Use freely, commercially or personally. Attribution appreciated but not required.
+```
+Activate MERIDIAN Orchestrator in Full Engagement mode.
 
----
+Client: [COMPANY NAME]
+Sector: [INDUSTRY / GICS SECTOR]
+Regulatory jurisdiction: [EU / US / UK / Global]
+Trigger: [CSRD in scope / SBTi commitment / Investor request / Proactive]
+Known priorities: [e.g., GHG inventory + SBTi target + CDP A-list]
 
-## 🙏 Acknowledgments
+Execute complete MERIDIAN engagement:
+- Phase 0: Intake & scoping (MERIDIAN Orchestrator)
+- Phase 1: Baseline assessment (GHG Inventory Specialist, ESG Data Analyst, Scope 3 Analyst)
+- Phase 2: Materiality (Materiality Facilitator, CSRD Advisor, Climate Risk Analyst)
+- Phase 3: Strategy & roadmap (Net Zero Strategist, Science-Based Targets Advisor, Sustainability Strategy Advisor)
+- Phase 4: Disclosure & reporting (ESG Report Writer, CDP Specialist, Client Deliverable Generator, Greenwashing Auditor)
 
-Born from a Reddit discussion about AI agent specialization. Thanks to the community for the feedback, requests, and inspiration.
-
-Special recognition to the 50+ Redditors who requested this within the first 12 hours - you proved there's demand for real, specialized AI agent systems.
-
----
-
-## 💬 Community
-
-- **GitHub Discussions**: [Share your success stories](https://github.com/msitarzewski/agency-agents/discussions)
-- **Issues**: [Report bugs or request features](https://github.com/msitarzewski/agency-agents/issues)
-- **Reddit**: Join the conversation on r/ClaudeAI
-- **Twitter/X**: Share with #TheAgency
-
----
-
-## 🚀 Get Started
-
-1. **Browse** the agents above and find specialists for your needs
-2. **Copy** the agents to `~/.claude/agents/` for Claude Code integration
-3. **Activate** agents by referencing them in your Claude conversations
-4. **Customize** agent personalities and workflows for your specific needs
-5. **Share** your results and contribute back to the community
+Quality gates between every phase. Greenwashing Auditor clearance required for all external deliverables.
+```
 
 ---
 
-<div align="center">
+## The Strategy Layer
 
-**🎭 The Agency: Your AI Dream Team Awaits 🎭**
+| Document | Purpose | Location |
+|---|---|---|
+| **MERIDIAN Master Doctrine** | Complete engagement playbook | `strategy/meridian-strategy.md` |
+| **Phase 0: Intake & Scoping** | Client intake, regulatory trigger assessment | `strategy/playbooks/phase-0-intake.md` |
+| **Phase 1: Baseline Assessment** | GHG inventory, data collection, ESG baseline | `strategy/playbooks/phase-1-baseline.md` |
+| **Phase 2: Materiality** | Double materiality, IRO identification, stakeholder engagement | `strategy/playbooks/phase-2-materiality.md` |
+| **Phase 3: Strategy & Roadmap** | Net zero strategy, target-setting, implementation planning | `strategy/playbooks/phase-3-roadmap.md` |
+| **Phase 4: Disclosure & Reporting** | CSRD/CDP/GRI reporting, board deliverables, greenwashing audit | `strategy/playbooks/phase-4-reporting.md` |
+| **Runbook: GHG Inventory** | End-to-end GHG inventory engagement | `strategy/runbooks/scenario-ghg-inventory.md` |
+| **Runbook: Net Zero Roadmap** | Net zero commitment through SBTi target | `strategy/runbooks/scenario-net-zero-roadmap.md` |
+| **Runbook: CSRD Disclosure** | CSRD first-time reporting engagement | `strategy/runbooks/scenario-csrd-disclosure.md` |
+| **Runbook: EPR Compliance** | Extended producer responsibility compliance | `strategy/runbooks/scenario-epr-compliance.md` |
 
-[⭐ Star this repo](https://github.com/msitarzewski/agency-agents) • [🍴 Fork it](https://github.com/msitarzewski/agency-agents/fork) • [🐛 Report an issue](https://github.com/msitarzewski/agency-agents/issues) • [❤️ Sponsor](https://github.com/sponsors/msitarzewski)
+---
 
-Made with ❤️ by the community, for the community
+## Attribution
 
-</div>
+This repository is forked from and inspired by [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — a brilliant collection of AI agent personas for digital agencies. The agent architecture, YAML frontmatter format, orchestration doctrine model, and install/convert tooling are all derived from that original work.
+
+What changed: the domain. Digital agency → sustainability consulting firm. Frontend developers → GHG inventory specialists. Reality checkers → Greenwashing auditors. NEXUS → MERIDIAN.
+
+Credit where it's due: the original format made this possible.
+
+---
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new agents or improving existing ones.
+
+**Quality bar**: every agent must cite real frameworks and regulations with correct version numbers, include a "No Greenwashing — Ever" commitment in Critical Rules, and produce deliverables that would pass peer review from a senior Anthesis or ERM consultant.
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+*Built on the architecture of [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents). Sustainability consulting domain expertise added by [MikeTannenbaum](https://github.com/MikeTannenbaum).*

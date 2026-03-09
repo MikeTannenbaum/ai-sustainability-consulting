@@ -1,6 +1,6 @@
-# 🤝 Contributing to The Agency
+# Contributing to AI Sustainability Consulting
 
-First off, thank you for considering contributing to The Agency! It's people like you who make this collection of AI agents better for everyone.
+Thank you for considering contributing to this repository. Every agent here exists to help sustainability professionals do rigorous, defensible work — and contributions that raise the technical quality bar are the most valuable ones.
 
 ## 📋 Table of Contents
 
@@ -31,16 +31,15 @@ This project and everyone participating in it is governed by our Code of Conduct
 Have an idea for a specialized agent? Great! Here's how to add one:
 
 1. **Fork the repository**
-2. **Choose the appropriate category** (or propose a new one):
-   - `engineering/` - Software development specialists
-   - `design/` - UX/UI and creative specialists
-   - `marketing/` - Growth and marketing specialists
-   - `product/` - Product management specialists
-   - `project-management/` - PM and coordination specialists
-   - `testing/` - QA and testing specialists
-   - `support/` - Operations and support specialists
-   - `spatial-computing/` - AR/VR/XR specialists
-   - `specialized/` - Unique specialists that don't fit elsewhere
+2. **Choose the appropriate division** (or propose a new one):
+   - `climate/` - GHG accounting, targets, climate risk, carbon markets
+   - `compliance/` - CSRD, EPR, EU Taxonomy, SEC climate, permitting
+   - `reporting/` - ESG reporting, CDP, materiality, data quality
+   - `energy-resources/` - Energy efficiency, renewable energy, circular economy, water/waste
+   - `supply-chain/` - Scope 3, LCA, supplier engagement, human rights
+   - `nature-biodiversity/` - TNFD, nature-based solutions, land use
+   - `strategy-engagement/` - Strategy, stakeholder engagement, impact, greenwashing audit
+   - `specialized/` - Orchestration, data consolidation, client deliverables
 
 3. **Create your agent file** following the template below
 4. **Test your agent** in real scenarios
@@ -144,47 +143,48 @@ Advanced techniques and approaches the agent masters
 
 ### Agent Design Principles
 
-1. **🎭 Strong Personality**
-   - Give the agent a distinct voice and character
-   - Not "I am a helpful assistant" - be specific and memorable
-   - Example: "I default to finding 3-5 issues and require visual proof" (Evidence Collector)
+1. **Technical accuracy is non-negotiable**
+   - Cite real frameworks with correct version numbers (GHG Protocol Corporate Standard, ESRS 1, ISO 14040:2006, etc.)
+   - Name specific regulations with correct citation (CA SB 54, EU Directive 2024/825/EU, 16 CFR Part 260)
+   - Include real tool names: USEEIO, IBAT, ENCORE, WRI Aqueduct, Exiobase, OpenLCA, CDP questionnaire module numbers
+   - Do not cite "various sustainability frameworks" — name them
 
-2. **📋 Clear Deliverables**
-   - Provide concrete code examples
-   - Include templates and frameworks
-   - Show real outputs, not vague descriptions
+2. **Greenwashing rules in every agent**
+   - Every agent must include a "No Greenwashing — Ever" section in Critical Rules
+   - The rule must be substantive — not just "don't greenwash" but specific to the agent's domain
+   - Agents must actively prevent greenwashing risk in their domain, not just flag it
 
-3. **✅ Success Metrics**
-   - Include specific, measurable metrics
-   - Example: "Page load times under 3 seconds on 3G"
-   - Example: "10,000+ combined karma across accounts"
+3. **Deliverable-focused**
+   - Provide concrete output templates: GHG inventory tables, CDP module excerpts, ESRS disclosure structures, board deck slide frameworks
+   - Show real outputs with real data structures, not vague descriptions of what the agent "will produce"
+   - Every recommendation has a named owner and a timeline
 
-4. **🔄 Proven Workflows**
-   - Step-by-step processes
-   - Real-world tested approaches
-   - Not theoretical - battle-tested
+4. **Audience-specific communication**
+   - Agents must translate technical content for non-technical audiences
+   - Board-level language: financial exposure, risk, and decision framing
+   - Technical-level language: methodology precision, data quality scores, framework compliance
+   - Legal-level language: appropriately hedged, forward-looking statement qualifications
 
-5. **💡 Learning Memory**
-   - What patterns the agent recognizes
-   - How it improves over time
-   - What it remembers between sessions
+5. **Quality bar: Anthesis/ERM/BSR standard**
+   - Ask yourself: would a senior consultant at Anthesis, ERM, or BSR produce this deliverable?
+   - If not, the agent needs more depth, more specificity, or better templates
 
 ### What Makes a Great Agent?
 
-**Great agents have**:
-- ✅ Narrow, deep specialization
-- ✅ Distinct personality and voice
-- ✅ Concrete code/template examples
-- ✅ Measurable success metrics
-- ✅ Step-by-step workflows
-- ✅ Real-world testing and iteration
+**Great sustainability agents have**:
+- Narrow, deep specialization with real regulatory citations
+- Distinct personality and clear communication style
+- Concrete output templates with realistic data structures
+- "No Greenwashing" section with domain-specific rules
+- Step-by-step workflows calibrated to real engagement timelines
+- Success metrics tied to actual outcomes (CDP score, assurance clearance, board approval)
 
 **Avoid**:
-- ❌ Generic "helpful assistant" personality
-- ❌ Vague "I will help you with..." descriptions
-- ❌ No code examples or deliverables
-- ❌ Overly broad scope (jack of all trades)
-- ❌ Untested theoretical approaches
+- Vague framework references ("aligned with sustainability best practices")
+- Generic output descriptions without actual templates
+- Missing "No Greenwashing" commitment
+- Overly broad scope that could apply to any sustainability topic
+- Fabricated regulatory citations or incorrect methodology details
 
 ---
 
@@ -303,10 +303,10 @@ Contributors who make significant contributions will be:
 
 ## 🤔 Questions?
 
-- **General Questions**: [GitHub Discussions](https://github.com/msitarzewski/agency-agents/discussions)
-- **Bug Reports**: [GitHub Issues](https://github.com/msitarzewski/agency-agents/issues)
-- **Feature Requests**: [GitHub Issues](https://github.com/msitarzewski/agency-agents/issues)
-- **Community Chat**: [Join our discussions](https://github.com/msitarzewski/agency-agents/discussions)
+- **General Questions**: [GitHub Discussions](https://github.com/MikeTannenbaum/ai-sustainability-consulting/discussions)
+- **Bug Reports**: [GitHub Issues](https://github.com/MikeTannenbaum/ai-sustainability-consulting/issues)
+- **Feature Requests**: [GitHub Issues](https://github.com/MikeTannenbaum/ai-sustainability-consulting/issues)
+- **Upstream (agent architecture)**: [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 
 ---
 
@@ -315,9 +315,9 @@ Contributors who make significant contributions will be:
 ### For New Contributors
 
 - [README.md](README.md) - Overview and agent catalog
-- [Example: Frontend Developer](engineering/engineering-frontend-developer.md) - Well-structured agent example
-- [Example: Reddit Community Builder](marketing/marketing-reddit-community-builder.md) - Great personality example
-- [Example: Whimsy Injector](design/design-whimsy-injector.md) - Creative specialist example
+- [Example: GHG Inventory Specialist](climate/climate-ghg-inventory-specialist.md) - Strong technical depth
+- [Example: Greenwashing Auditor](strategy-engagement/strategy-greenwashing-auditor.md) - Forensic personality + regulatory precision
+- [Example: CSRD Advisor](compliance/compliance-csrd-advisor.md) - Complex framework, structured deliverables
 
 ### For Agent Design
 

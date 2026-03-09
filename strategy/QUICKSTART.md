@@ -1,194 +1,186 @@
-# ⚡ NEXUS Quick-Start Guide
+# MERIDIAN Quick-Start Guide
 
-> **Get from zero to orchestrated multi-agent pipeline in 5 minutes.**
+> **From zero to coordinated sustainability consulting engagement in 5 minutes.**
 
 ---
 
-## What is NEXUS?
+## What is MERIDIAN?
 
-**NEXUS** (Network of EXperts, Unified in Strategy) turns The Agency's AI specialists into a coordinated pipeline. Instead of activating agents one at a time and hoping they work together, NEXUS defines exactly who does what, when, and how quality is verified at every step.
+**MERIDIAN** (Multi-domain Expert Routing for Integrated Disclosure, Analysis, and Net-zero Impact) coordinates 32 sustainability specialists into a structured consulting engagement. Instead of activating agents one at a time and hoping they work together, MERIDIAN defines exactly who does what, when, and how quality is verified at every step — including mandatory Greenwashing Auditor clearance for every external deliverable.
 
 ## Choose Your Mode
 
-| I want to... | Use | Agents | Time |
-|-------------|-----|--------|------|
-| Build a complete product from scratch | **NEXUS-Full** | All | 12-24 weeks |
-| Build a feature or MVP | **NEXUS-Sprint** | 15-25 | 2-6 weeks |
-| Do a specific task (bug fix, campaign, audit) | **NEXUS-Micro** | 5-10 | 1-5 days |
+| I want to... | Use | Agents | Timeline |
+|---|---|---|---|
+| Run a full sustainability engagement (GHG → CSRD disclosure) | **MERIDIAN-Full** | 15–32 | 4–6 months |
+| Focus on one area (CDP, SBTi, CSRD first report) | **MERIDIAN-Sprint** | 6–15 | 6–12 weeks |
+| Get a single deliverable (board deck, greenwashing audit) | **MERIDIAN-Micro** | 2–5 | 1–3 weeks |
 
 ---
 
-## 🚀 NEXUS-Full: Start a Complete Project
+## MERIDIAN-Full: Complete Engagement
 
-**Copy this prompt to activate the full pipeline:**
-
-```
-Activate Agents Orchestrator in NEXUS-Full mode.
-
-Project: [YOUR PROJECT NAME]
-Specification: [DESCRIBE YOUR PROJECT OR LINK TO SPEC]
-
-Execute the complete NEXUS pipeline:
-- Phase 0: Discovery (Trend Researcher, Feedback Synthesizer, UX Researcher, Analytics Reporter, Legal Compliance Checker, Tool Evaluator)
-- Phase 1: Strategy (Studio Producer, Senior Project Manager, Sprint Prioritizer, UX Architect, Brand Guardian, Backend Architect, Finance Tracker)
-- Phase 2: Foundation (DevOps Automator, Frontend Developer, Backend Architect, UX Architect, Infrastructure Maintainer)
-- Phase 3: Build (Dev↔QA loops — all engineering + Evidence Collector)
-- Phase 4: Harden (Reality Checker, Performance Benchmarker, API Tester, Legal Compliance Checker)
-- Phase 5: Launch (Growth Hacker, Content Creator, all marketing agents, DevOps Automator)
-- Phase 6: Operate (Analytics Reporter, Infrastructure Maintainer, Support Responder, ongoing)
-
-Quality gates between every phase. Evidence required for all assessments.
-Maximum 3 retries per task before escalation.
-```
-
----
-
-## 🏃 NEXUS-Sprint: Build a Feature or MVP
-
-**Copy this prompt:**
+**Copy this prompt to start:**
 
 ```
-Activate Agents Orchestrator in NEXUS-Sprint mode.
+Activate MERIDIAN Orchestrator in Full Engagement mode.
 
-Feature/MVP: [DESCRIBE WHAT YOU'RE BUILDING]
-Timeline: [TARGET WEEKS]
-Skip Phase 0 (market already validated).
+Client: [COMPANY NAME]
+Sector: [INDUSTRY / GICS SECTOR]
+Regulatory jurisdiction: [EU / US / UK / Global]
+Trigger: [CSRD in scope / SBTi commitment / Investor request / Proactive]
 
-Sprint team:
-- PM: Senior Project Manager, Sprint Prioritizer
-- Design: UX Architect, Brand Guardian
-- Engineering: Frontend Developer, Backend Architect, DevOps Automator
-- QA: Evidence Collector, Reality Checker, API Tester
-- Support: Analytics Reporter
+Execute complete MERIDIAN engagement:
+- Phase 0: Intake & scoping (regulatory triggers, data collection plan)
+- Phase 1: Baseline (GHG inventory, Scope 3, ESG data, master data table)
+- Phase 2: Materiality (double materiality, IRO register, climate risk, DMA)
+- Phase 3: Strategy (SBTi targets, MACC, net zero roadmap, financial case)
+- Phase 4: Disclosure (CSRD/GRI/CDP, board deck, investor factsheet, greenwashing audit)
 
-Begin at Phase 1 with architecture and sprint planning.
-Run Dev↔QA loops for all implementation tasks.
-Reality Checker approval required before launch.
+Quality gates between every phase.
+Greenwashing Auditor clearance required for all external deliverables.
 ```
 
 ---
 
-## 🎯 NEXUS-Micro: Do a Specific Task
+## MERIDIAN-Sprint: Focused Engagement
 
-**Pick your scenario and copy the prompt:**
+**CDP A-List Sprint:**
+```
+Activate CDP Specialist as sprint lead.
+Goal: CDP Climate A-list for [Year] submission.
+Existing data: GHG inventory FY[year] / Prior CDP score: [score]
+Deadline: [July submission / November re-submission]
 
-### Fix a Bug
-```
-Activate Backend Architect to investigate and fix [BUG DESCRIPTION].
-After fix, activate API Tester to verify the fix.
-Then activate Evidence Collector to confirm no visual regressions.
-```
-
-### Run a Marketing Campaign
-```
-Activate Social Media Strategist as campaign lead for [CAMPAIGN DESCRIPTION].
-Team: Content Creator, Twitter Engager, Instagram Curator, Reddit Community Builder.
-Brand Guardian reviews all content before publishing.
-Analytics Reporter tracks performance daily.
-Growth Hacker optimizes channels weekly.
+Team: CDP Specialist (lead), GHG Inventory Specialist (data QA),
+Climate Risk Analyst (C2 scenario analysis), Greenwashing Auditor (claims review).
+Begin with score gap analysis vs. A-list requirements.
 ```
 
-### Conduct a Compliance Audit
+**SBTi Target Setting Sprint:**
 ```
-Activate Legal Compliance Checker for comprehensive compliance audit.
-Scope: [GDPR / CCPA / HIPAA / ALL]
-After audit, activate Executive Summary Generator to create stakeholder report.
+Activate Science-Based Targets Advisor as sprint lead.
+Goal: SBTi near-term target formulated and submitted.
+Baseline: Scope 1+2: [X tCO2e], Scope 3: [Y tCO2e], Base year: [FY20XX]
+SBTi status: [Committed / Not yet committed]
+
+Team: SBTi Advisor (target formulation), Net Zero Strategist (MACC + roadmap),
+Client Deliverable Generator (board commitment deck), Greenwashing Auditor (commitment language).
+Output: SBTi submission package + board approval deck.
 ```
 
-### Investigate Performance Issues
+**CSRD First Report Sprint:**
 ```
-Activate Performance Benchmarker to diagnose performance issues.
-Scope: [API response times / Page load / Database queries / All]
-After diagnosis, activate Infrastructure Maintainer for optimization.
-DevOps Automator deploys any infrastructure changes.
-```
+Activate CSRD Advisor as sprint lead.
+Goal: First ESRS sustainability statement — limited assurance ready.
+CSRD phase: [Phase 1 FY2024 / Phase 2 FY2025 / Other]
 
-### Market Research
-```
-Activate Trend Researcher for market intelligence on [DOMAIN].
-Deliverables: Competitive landscape, market sizing, trend forecast.
-After research, activate Executive Summary Generator for executive brief.
-```
-
-### UX Improvement
-```
-Activate UX Researcher to identify usability issues in [FEATURE/PRODUCT].
-After research, activate UX Architect to design improvements.
-Frontend Developer implements changes.
-Evidence Collector verifies improvements.
+Team: CSRD Advisor + Materiality Facilitator (DMA), GHG Inventory Specialist (E1 data),
+ESG Report Writer (drafting), ESG Data Analyst (XBRL + assurance prep),
+Greenwashing Auditor (mandatory final review).
 ```
 
 ---
 
-## 📁 Strategy Documents
+## MERIDIAN-Micro: Single Deliverable
+
+**Board Sustainability Briefing:**
+```
+Activate Client Deliverable Generator for board briefing on [TOPIC].
+Source material: [GHG inventory / strategy document / prior report]
+Audience: Board of Directors — sustainability literacy: [low/medium/high]
+Format: 10-slide board briefing deck with financial framing.
+After draft: activate Greenwashing Auditor for claim review.
+```
+
+**Greenwashing Audit Only:**
+```
+Activate Greenwashing Auditor for pre-publication review.
+Document: [DOCUMENT NAME OR CONTENT]
+Market: [US / EU / UK / Global]
+Priority: Flag all CRITICAL and HIGH risks; provide revised approved language for all fails.
+Output: Full claim audit matrix + pre-publication checklist.
+```
+
+**GHG Inventory QA:**
+```
+Activate GHG Inventory Specialist to QA existing inventory.
+Inventory: [FY20XX — attach or describe]
+Check: Consolidation approach, EF sources, AR6 GWPs, Scope 2 dual method,
+Scope 3 category completeness, DQS scores, intercompany netting.
+Output: QA finding report with remediation guidance.
+```
+
+**Materiality Update:**
+```
+Activate Materiality Facilitator for materiality assessment update.
+Prior assessment: [Year]
+Framework: [ESRS 1 double materiality / GRI / ISSB]
+Changes since last assessment: [M&A / New markets / Regulatory changes / Stakeholder feedback]
+Output: Updated IRO register + material topic list + DMA narrative revision.
+```
+
+---
+
+## Strategy Documents
 
 | Document | Purpose | Location |
-|----------|---------|----------|
-| **Master Strategy** | Complete NEXUS doctrine | `strategy/nexus-strategy.md` |
-| **Phase 0 Playbook** | Discovery & intelligence | `strategy/playbooks/phase-0-discovery.md` |
-| **Phase 1 Playbook** | Strategy & architecture | `strategy/playbooks/phase-1-strategy.md` |
-| **Phase 2 Playbook** | Foundation & scaffolding | `strategy/playbooks/phase-2-foundation.md` |
-| **Phase 3 Playbook** | Build & iterate | `strategy/playbooks/phase-3-build.md` |
-| **Phase 4 Playbook** | Quality & hardening | `strategy/playbooks/phase-4-hardening.md` |
-| **Phase 5 Playbook** | Launch & growth | `strategy/playbooks/phase-5-launch.md` |
-| **Phase 6 Playbook** | Operate & evolve | `strategy/playbooks/phase-6-operate.md` |
-| **Activation Prompts** | Ready-to-use agent prompts | `strategy/coordination/agent-activation-prompts.md` |
-| **Handoff Templates** | Standardized handoff formats | `strategy/coordination/handoff-templates.md` |
-| **Startup MVP Runbook** | 4-6 week MVP build | `strategy/runbooks/scenario-startup-mvp.md` |
-| **Enterprise Feature Runbook** | Enterprise feature development | `strategy/runbooks/scenario-enterprise-feature.md` |
-| **Marketing Campaign Runbook** | Multi-channel campaign | `strategy/runbooks/scenario-marketing-campaign.md` |
-| **Incident Response Runbook** | Production incident handling | `strategy/runbooks/scenario-incident-response.md` |
+|---|---|---|
+| **MERIDIAN Master Doctrine** | Complete engagement playbook | `strategy/meridian-strategy.md` |
+| **Phase 0: Intake & Scoping** | Regulatory trigger mapping, scope definition | `strategy/playbooks/phase-0-intake.md` |
+| **Phase 1: Baseline Assessment** | GHG inventory, ESG data, master data table | `strategy/playbooks/phase-1-baseline.md` |
+| **Phase 2: Materiality** | Double materiality, IRO register, DMA | `strategy/playbooks/phase-2-materiality.md` |
+| **Phase 3: Strategy & Roadmap** | SBTi, MACC, net zero roadmap, financial case | `strategy/playbooks/phase-3-roadmap.md` |
+| **Phase 4: Disclosure & Reporting** | CSRD/CDP/GRI, deliverables, greenwashing audit | `strategy/playbooks/phase-4-reporting.md` |
+| **Runbook: GHG Inventory** | End-to-end GHG inventory engagement | `strategy/runbooks/scenario-ghg-inventory.md` |
+| **Runbook: Net Zero Roadmap** | Net zero commitment through SBTi target | `strategy/runbooks/scenario-net-zero-roadmap.md` |
+| **Runbook: CSRD Disclosure** | CSRD first-year reporting engagement | `strategy/runbooks/scenario-csrd-disclosure.md` |
+| **Runbook: EPR Compliance** | Extended producer responsibility compliance | `strategy/runbooks/scenario-epr-compliance.md` |
+| **Agent Activation Prompts** | Ready-to-use prompts for every agent | `strategy/coordination/agent-activation-prompts.md` |
+| **Handoff Templates** | Structured agent-to-agent handoff formats | `strategy/coordination/handoff-templates.md` |
 
 ---
 
-## 🔑 Key Concepts in 30 Seconds
+## Key Concepts in 30 Seconds
 
-1. **Quality Gates** — No phase advances without evidence-based approval
-2. **Dev↔QA Loop** — Every task is built then tested; PASS to proceed, FAIL to retry (max 3)
-3. **Handoffs** — Structured context transfer between agents (never start cold)
-4. **Reality Checker** — Final quality authority; defaults to "NEEDS WORK"
-5. **Agents Orchestrator** — Pipeline controller managing the entire flow
-6. **Evidence Over Claims** — Screenshots, test results, and data — not assertions
+1. **Quality Gates** — No phase advances without documented evidence (not assertions)
+2. **Greenwashing Firewall** — Greenwashing Auditor clearance required for ALL external deliverables, no exceptions
+3. **Master Data Table** — Single source of truth created in Phase 1; all deliverables draw from it; version drift is a liability
+4. **Handoffs** — Structured context transfer; no agent starts cold; locked decisions stay locked
+5. **MERIDIAN Orchestrator** — Pipeline controller; manages phases, quality gates, and agent coordination
+6. **Audience-First Communication** — Board version leads with "$28M carbon exposure," not "Scope 1: 14,230 tCO2e"
 
 ---
 
-## 🎭 The Agents at a Glance
+## The Agent Roster at a Glance
 
 ```
-ENGINEERING         │ DESIGN              │ MARKETING
-Frontend Developer  │ UI Designer         │ Growth Hacker
-Backend Architect   │ UX Researcher       │ Content Creator
-Mobile App Builder  │ UX Architect        │ Twitter Engager
-AI Engineer         │ Brand Guardian      │ TikTok Strategist
-DevOps Automator    │ Visual Storyteller  │ Instagram Curator
-Rapid Prototyper    │ Whimsy Injector     │ Reddit Community Builder
-Senior Developer    │ Image Prompt Eng.   │ App Store Optimizer
-                    │                     │ Social Media Strategist
-────────────────────┼─────────────────────┼──────────────────────
-PRODUCT             │ PROJECT MGMT        │ TESTING
-Sprint Prioritizer  │ Studio Producer     │ Evidence Collector
-Trend Researcher    │ Project Shepherd    │ Reality Checker
-Feedback Synthesizer│ Studio Operations   │ Test Results Analyzer
-                    │ Experiment Tracker  │ Performance Benchmarker
-                    │ Senior Project Mgr  │ API Tester
-                    │                     │ Tool Evaluator
-                    │                     │ Workflow Optimizer
-────────────────────┼─────────────────────┼──────────────────────
-SUPPORT             │ SPATIAL             │ SPECIALIZED
-Support Responder   │ XR Interface Arch.  │ Agents Orchestrator
-Analytics Reporter  │ macOS Spatial/Metal │ Data Analytics Reporter
-Finance Tracker     │ XR Immersive Dev    │ LSP/Index Engineer
-Infra Maintainer    │ XR Cockpit Spec.    │ Sales Data Extraction
-Legal Compliance    │ visionOS Spatial    │ Data Consolidation
-Exec Summary Gen.   │ Terminal Integration│ Report Distribution
+CLIMATE                  │ COMPLIANCE              │ REPORTING
+GHG Inventory Specialist │ EPR Specialist          │ ESG Report Writer
+SBTi Advisor             │ CSRD Advisor            │ CDP Specialist
+Net Zero Strategist      │ EU Taxonomy Analyst     │ Materiality Facilitator
+Carbon Markets Analyst   │ SEC Climate Expert      │ ESG Data Analyst
+Climate Risk Analyst     │ Permit Navigator        │
+─────────────────────────┼─────────────────────────┼─────────────────────────
+ENERGY & RESOURCES       │ SUPPLY CHAIN            │ NATURE & BIODIVERSITY
+Energy Efficiency Auditor│ Scope 3 Analyst         │ TNFD Strategist
+Renewable Energy Advisor │ LCA Specialist          │ NbS Advisor
+Circular Economy Strat.  │ Supplier Engagement     │ Land Use Analyst
+Water & Waste Specialist │ Human Rights Advisor    │
+─────────────────────────┼─────────────────────────┼─────────────────────────
+STRATEGY & ENGAGEMENT    │                         │ SPECIALIZED
+Sustainability Advisor   │                         │ MERIDIAN Orchestrator
+Stakeholder Specialist   │                         │ Data Consolidator
+Impact Analyst           │                         │ Client Deliverable Gen.
+Greenwashing Auditor     │                         │
 ```
 
 ---
 
 <div align="center">
 
-**Start with a mode. Follow the playbook. Trust the pipeline.**
+**Start with a mode. Follow the playbook. Trust the greenwashing firewall.**
 
-`strategy/nexus-strategy.md` — The complete doctrine
+`strategy/meridian-strategy.md` — The complete doctrine
 
 </div>

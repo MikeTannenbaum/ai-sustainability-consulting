@@ -1,357 +1,243 @@
-# 📋 NEXUS Handoff Templates
+# MERIDIAN Handoff Templates
 
-> Standardized templates for every type of agent-to-agent handoff in the NEXUS pipeline. Consistent handoffs prevent context loss — the #1 cause of multi-agent coordination failure.
+> **Structured context transfer between agents.** No agent starts cold. Every handoff includes: what was done, what was decided, what data is being transferred, and what the receiving agent should NOT reopen without authorization.
 
 ---
 
-## 1. Standard Handoff Template
-
-Use for any agent-to-agent work transfer.
+## Standard Handoff Template
 
 ```markdown
-# NEXUS Handoff Document
+## Handoff: [FROM AGENT] → [TO AGENT]
+**Date**: [Date]
+**Engagement**: [Company] — [Engagement type]
+**Phase transition**: Phase [X] → Phase [Y]
+**Prepared by**: [Agent name]
 
-## Metadata
-| Field | Value |
-|-------|-------|
-| **From** | [Agent Name] ([Division]) |
-| **To** | [Agent Name] ([Division]) |
-| **Phase** | Phase [N] — [Phase Name] |
-| **Task Reference** | [Task ID from Sprint Prioritizer backlog] |
-| **Priority** | [Critical / High / Medium / Low] |
-| **Timestamp** | [YYYY-MM-DDTHH:MM:SSZ] |
+---
 
-## Context
-**Project**: [Project name]
-**Current State**: [What has been completed so far — be specific]
-**Relevant Files**:
-- [file/path/1] — [what it contains]
-- [file/path/2] — [what it contains]
-**Dependencies**: [What this work depends on being complete]
-**Constraints**: [Technical, timeline, or resource constraints]
+### Work Completed in This Phase
 
-## Deliverable Request
-**What is needed**: [Specific, measurable deliverable description]
-**Acceptance criteria**:
-- [ ] [Criterion 1 — measurable]
-- [ ] [Criterion 2 — measurable]
-- [ ] [Criterion 3 — measurable]
-**Reference materials**: [Links to specs, designs, previous work]
+[3–5 bullet points: what was done, what outputs were produced, what decisions were made]
 
-## Quality Expectations
-**Must pass**: [Specific quality criteria for this deliverable]
-**Evidence required**: [What proof of completion looks like]
-**Handoff to next**: [Who receives the output and what format they need]
+### Key Findings for Receiving Agent
+
+[The 3–5 most important things the receiving agent needs to know to do their job well]
+
+### Data Transferred
+
+| Metric | Value | DQS | Source | Caveats / Limitations |
+|---|---|---|---|---|
+| [Metric name] | [Value + units] | [1–5] | [Source document] | [Any limitations, estimates, or improvement notes] |
+
+### Decisions That Are Locked
+
+The following decisions were made with the client and are not to be reopened:
+- [Decision 1: e.g., Consolidation approach = Operational Control — rationale documented in boundary map]
+- [Decision 2: e.g., Base year = FY2019 — pre-COVID; recalculation policy agreed in writing]
+- [Decision 3]
+
+### Open Items for Receiving Agent
+
+[Anything unresolved that the receiving agent needs to address — be specific]
+
+### Deliverables Transferred
+
+| Document | Version | Location | Status |
+|---|---|---|---|
+| [Document name] | [v1.0] | [File path] | [Draft / Reviewed / Final] |
+
+### Quality Gate Status
+
+[Gate X: PASSED / PASSED WITH CONDITIONS (list conditions) / FAILED (do not advance)]
+
+---
+*Master data table location*: [File path]
+*Engagement project folder*: [Location]
 ```
 
 ---
 
-## 2. QA Feedback Loop — PASS
+## Phase-Specific Handoff Templates
 
-Use when Evidence Collector or other QA agent approves a task.
+### Phase 0 → Phase 1: Intake to Baseline
 
 ```markdown
-# NEXUS QA Verdict: PASS ✅
+## Handoff: MERIDIAN Orchestrator → GHG Inventory Specialist + ESG Data Analyst
+**Phase transition**: Phase 0 (Intake) → Phase 1 (Baseline Assessment)
 
-## Task
-| Field | Value |
-|-------|-------|
-| **Task ID** | [ID] |
-| **Task Description** | [Description] |
-| **Developer Agent** | [Agent Name] |
-| **QA Agent** | [Agent Name] |
-| **Attempt** | [N] of 3 |
-| **Timestamp** | [YYYY-MM-DDTHH:MM:SSZ] |
+### Work Completed
+- Client briefing complete: [Company] context, triggers, timeline documented
+- Regulatory trigger map: [List applicable frameworks and deadlines]
+- Consolidation approach confirmed: [Operational / Financial / Equity control]
+- Data request issued to client: [Date issued; due date from client]
+- Agent activation plan confirmed: [List Phase 1 agents and their assignments]
 
-## Verdict: PASS
+### Critical Inputs for Phase 1
 
-## Evidence
-**Screenshots**:
-- Desktop (1920x1080): [filename/path]
-- Tablet (768x1024): [filename/path]
-- Mobile (375x667): [filename/path]
+| Item | Detail | Source |
+|---|---|---|
+| Consolidation approach | [Approach + rationale] | Engagement scope document |
+| Base year | [Year or TBD] | [Agreement or TBD in Phase 1] |
+| Regulatory deadline | [Earliest relevant deadline] | Regulatory trigger map |
+| Client data owner | [Name, email] | Client briefing |
+| Data submission date | [Date] | Data collection plan |
 
-**Functional Verification**:
-- [x] [Acceptance criterion 1] — verified
-- [x] [Acceptance criterion 2] — verified
-- [x] [Acceptance criterion 3] — verified
+### Locked Decisions
+- Consolidation approach: [LOCKED — do not change without client re-authorization and restatement]
+- Reporting period: [Calendar year / Fiscal year ending [date]]
 
-**Brand Consistency**: Verified — colors, typography, spacing match design system
-**Accessibility**: Verified — keyboard navigation, contrast ratios, semantic HTML
-**Performance**: [Load time measured] — within acceptable range
+### Open Items for Phase 1
+- [ ] Data collection from client — due [date]
+- [ ] Confirm base year once data quality is assessed
+- [ ] Scope 3 screening — Scope 3 Analyst to begin by Week 2
 
-## Notes
-[Any observations, minor suggestions for future improvement, or positive callouts]
-
-## Next Action
-→ Agents Orchestrator: Mark task complete, advance to next task in backlog
+### Gate 0 Status: PASSED
 ```
 
 ---
 
-## 3. QA Feedback Loop — FAIL
-
-Use when Evidence Collector or other QA agent rejects a task.
+### Phase 1 → Phase 2: Baseline to Materiality
 
 ```markdown
-# NEXUS QA Verdict: FAIL ❌
+## Handoff: GHG Inventory Specialist + ESG Data Analyst → Materiality Facilitator
+**Phase transition**: Phase 1 (Baseline) → Phase 2 (Materiality)
 
-## Task
-| Field | Value |
-|-------|-------|
-| **Task ID** | [ID] |
-| **Task Description** | [Description] |
-| **Developer Agent** | [Agent Name] |
-| **QA Agent** | [Agent Name] |
-| **Attempt** | [N] of 3 |
-| **Timestamp** | [YYYY-MM-DDTHH:MM:SSZ] |
+### Work Completed
+- GHG inventory complete: Scope 1, 2 (location + market), Scope 3 material categories
+- ESG baseline dataset: [List key metrics collected]
+- Master data table: created and version-controlled at [file path]
+- Data quality scores: [X]% of Scope 1+2 at DQS ≥4; Scope 3 [X]% at DQS ≥3
+- Gap-fill documentation: [X] metrics gap-filled; documented at [file path]
 
-## Verdict: FAIL
+### Key Data for Materiality Assessment
 
-## Issues Found
+| Metric | Value | DQS | Key Note |
+|---|---|---|---|
+| Scope 1 | [X tCO2e] | [4] | AR6 GWPs; stationary + mobile + fugitive |
+| Scope 2 location | [X tCO2e] | [5] | IEA grid EF |
+| Scope 2 market | [X tCO2e] | [4] | PPA + residual mix |
+| Scope 3 total | [X tCO2e] | [2–4] | [X] of 15 categories quantified |
+| Top Scope 3 category | Cat [X]: [X tCO2e] | [2] | Spend-based; improvement needed |
+| GHG intensity | [X tCO2e/$M revenue] | [4] | |
+| Carbon cost exposure | $[X]M by 2030 | [3] | EU ETS €80/tCO2e assumption |
 
-### Issue 1: [Category] — [Severity: Critical/High/Medium/Low]
-**Description**: [Exact description of the problem]
-**Expected**: [What should happen according to acceptance criteria]
-**Actual**: [What actually happens]
-**Evidence**: [Screenshot filename or test output]
-**Fix instruction**: [Specific, actionable instruction to resolve]
-**File(s) to modify**: [Exact file paths]
+### Implications for Materiality
+- Climate (ESRS E1) is material on both impact and financial dimensions
+- [Other topics suggested by baseline data]
 
-### Issue 2: [Category] — [Severity]
-**Description**: [...]
-**Expected**: [...]
-**Actual**: [...]
-**Evidence**: [...]
-**Fix instruction**: [...]
-**File(s) to modify**: [...]
+### Master Data Table: LOCKED at Version 1.0
+Location: [file path] | Locked: [date]
+All Phase 2+ deliverables must use these numbers.
 
-[Continue for all issues found]
-
-## Acceptance Criteria Status
-- [x] [Criterion 1] — passed
-- [ ] [Criterion 2] — FAILED (see Issue 1)
-- [ ] [Criterion 3] — FAILED (see Issue 2)
-
-## Retry Instructions
-**For Developer Agent**:
-1. Fix ONLY the issues listed above
-2. Do NOT introduce new features or changes
-3. Re-submit for QA when all issues are addressed
-4. This is attempt [N] of 3 maximum
-
-**If attempt 3 fails**: Task will be escalated to Agents Orchestrator
+### Gate 1 Status: PASSED
 ```
 
 ---
 
-## 4. Escalation Report
-
-Use when a task exceeds 3 retry attempts.
+### Phase 2 → Phase 3: Materiality to Strategy
 
 ```markdown
-# NEXUS Escalation Report 🚨
+## Handoff: Materiality Facilitator → Net Zero Strategist + Sustainability Strategy Advisor
+**Phase transition**: Phase 2 (Materiality) → Phase 3 (Strategy)
 
-## Task
-| Field | Value |
-|-------|-------|
-| **Task ID** | [ID] |
-| **Task Description** | [Description] |
-| **Developer Agent** | [Agent Name] |
-| **QA Agent** | [Agent Name] |
-| **Attempts Exhausted** | 3/3 |
-| **Escalation To** | [Agents Orchestrator / Studio Producer] |
-| **Timestamp** | [YYYY-MM-DDTHH:MM:SSZ] |
+### Work Completed
+- Double materiality assessment complete: IRO register finalized
+- Material topics confirmed: [List material ESRS standards]
+- DMA documentation drafted per ESRS 1
+- Climate risk assessment: physical and transition risks quantified/qualified per TCFD
+- Stakeholder consultation: [X] stakeholder groups engaged
+- ESRS application matrix: [X] material standards; [Y] non-material with rationale
 
-## Failure History
+### Material Topics for Strategy Phase
 
-### Attempt 1
-- **Issues found**: [Summary]
-- **Fixes applied**: [What the developer changed]
-- **Result**: FAIL — [Why it still failed]
+| ESRS Standard | Topic | Why Material | Strategy Priority |
+|---|---|---|---|
+| E1 | Climate change | High financial impact; high emissions | HIGH |
+| E5 | Circular economy | Packaging waste material | HIGH |
+| S1 | Own workforce | H&S material; fair wage gap | MEDIUM |
+| G1 | Business conduct | Anti-corruption gap | MEDIUM |
 
-### Attempt 2
-- **Issues found**: [Summary]
-- **Fixes applied**: [What the developer changed]
-- **Result**: FAIL — [Why it still failed]
+### Climate Risk Findings for Strategy
 
-### Attempt 3
-- **Issues found**: [Summary]
-- **Fixes applied**: [What the developer changed]
-- **Result**: FAIL — [Why it still failed]
+| Risk Type | Risk | Time Horizon | Magnitude |
+|---|---|---|---|
+| Transition — Policy | EU ETS carbon cost exposure | Short-medium | $[X]M/yr by 2030 |
+| Physical — Acute | Flood risk to [facility] | Medium-long | $[X]M asset exposure |
 
-## Root Cause Analysis
-**Why the task keeps failing**: [Analysis of the underlying problem]
-**Systemic issue**: [Is this a one-off or pattern?]
-**Complexity assessment**: [Was the task properly scoped?]
+### Constraints for Strategy Phase
+- SBTi timeline: committed [date] — target due by [date]
+- Budget: [constraint or no constraint known]
+- Locked: base year [FY20XX], consolidation approach [method], target scope categories [list]
 
-## Recommended Resolution
-- [ ] **Reassign** to different developer agent ([recommended agent])
-- [ ] **Decompose** into smaller sub-tasks ([proposed breakdown])
-- [ ] **Revise approach** — architecture/design change needed
-- [ ] **Accept** current state with documented limitations
-- [ ] **Defer** to future sprint
-
-## Impact Assessment
-**Blocking**: [What other tasks are blocked by this]
-**Timeline Impact**: [How this affects the overall schedule]
-**Quality Impact**: [What quality compromises exist if we accept current state]
-
-## Decision Required
-**Decision maker**: [Agents Orchestrator / Studio Producer]
-**Deadline**: [When decision is needed to avoid further delays]
+### Gate 2 Status: PASSED
 ```
 
 ---
 
-## 5. Phase Gate Handoff
-
-Use when transitioning between NEXUS phases.
+### Phase 3 → Phase 4: Strategy to Disclosure
 
 ```markdown
-# NEXUS Phase Gate Handoff
+## Handoff: Net Zero Strategist + Sustainability Strategy Advisor → ESG Report Writer + Client Deliverable Generator
+**Phase transition**: Phase 3 (Strategy) → Phase 4 (Disclosure)
 
-## Transition
-| Field | Value |
-|-------|-------|
-| **From Phase** | Phase [N] — [Name] |
-| **To Phase** | Phase [N+1] — [Name] |
-| **Gate Keeper(s)** | [Agent Name(s)] |
-| **Gate Result** | [PASSED / FAILED] |
-| **Timestamp** | [YYYY-MM-DDTHH:MM:SSZ] |
+### Work Completed
+- SBTi target: S1+2: [X]% by [year]; S3: [X]% by [year]
+- MACC: [X] levers; [Y tCO2e/yr] abatement potential by 2030
+- Decarbonization roadmap: [milestone summary]
+- Renewable energy strategy: [X]% by [year]; instrument type
+- Carbon market strategy: [role of credits; VCMI pathway if any]
+- Financial case: $[X]M capex; NPV $[Y]M; risk reduction $[Z]M/yr
 
-## Gate Criteria Results
-| # | Criterion | Threshold | Result | Evidence |
-|---|-----------|-----------|--------|----------|
-| 1 | [Criterion] | [Threshold] | ✅ PASS / ❌ FAIL | [Evidence reference] |
-| 2 | [Criterion] | [Threshold] | ✅ PASS / ❌ FAIL | [Evidence reference] |
-| 3 | [Criterion] | [Threshold] | ✅ PASS / ❌ FAIL | [Evidence reference] |
+### Strategy Outputs for Disclosure
 
-## Documents Carried Forward
-1. [Document name] — [Purpose for next phase]
-2. [Document name] — [Purpose for next phase]
-3. [Document name] — [Purpose for next phase]
+| Deliverable | Status | Disclosure Destination |
+|---|---|---|
+| SBTi target formulation | Final | CDP C4; CSRD E1-4; investor comms |
+| MACC analysis | Final | CSRD E1-3; roadmap document |
+| Net zero roadmap | Draft | CSRD E1-1 (transition plan); board deck |
+| Financial risk summary | Final | CSRD E1-9; TCFD; CFO annex |
 
-## Key Constraints for Next Phase
-- [Constraint 1 from this phase's findings]
-- [Constraint 2 from this phase's findings]
+### Claims Requiring Greenwashing Audit
+All of the following require Greenwashing Auditor clearance before publication:
+- "Science-aligned targets" — SBTi committed, not yet validated
+- "Net zero by [year]" — forward commitment requiring hedging
+- "100% renewable electricity by [year]" — target, not yet contracted
+- Any percentage reduction claim that is a target (not achieved)
 
-## Agent Activation for Next Phase
-| Agent | Role | Priority |
-|-------|------|----------|
-| [Agent 1] | [Role in next phase] | [Immediate / Day 2 / As needed] |
-| [Agent 2] | [Role in next phase] | [Immediate / Day 2 / As needed] |
-
-## Risks Carried Forward
-| Risk | Severity | Mitigation | Owner |
-|------|----------|------------|-------|
-| [Risk] | [P0-P3] | [Mitigation plan] | [Agent] |
+### Gate 3 Status: PASSED
 ```
 
 ---
 
-## 6. Sprint Handoff
-
-Use at sprint boundaries.
+### Engagement Completion Handoff to Client
 
 ```markdown
-# NEXUS Sprint Handoff
+## Engagement Completion: MERIDIAN → Client
+**Engagement**: [Company] — [Engagement type]
+**Completed**: [Date]
 
-## Sprint Summary
-| Field | Value |
-|-------|-------|
-| **Sprint** | [Number] |
-| **Duration** | [Start date] → [End date] |
-| **Sprint Goal** | [Goal statement] |
-| **Velocity** | [Planned] / [Actual] story points |
+### Deliverables Produced
 
-## Completion Status
-| Task ID | Description | Status | QA Attempts | Notes |
-|---------|-------------|--------|-------------|-------|
-| [ID] | [Description] | ✅ Complete | [N] | [Notes] |
-| [ID] | [Description] | ✅ Complete | [N] | [Notes] |
-| [ID] | [Description] | ⚠️ Carried Over | [N] | [Reason] |
+| Deliverable | Audience | Version | Status | File |
+|---|---|---|---|---|
+| GHG Inventory Report FY[year] | CSO / Verifier | Final 1.0 | Greenwashing cleared | [file] |
+| CSRD Sustainability Statement | Board / Assurance | Final 1.0 | Assurance complete | [file] |
+| CDP Climate Response | CDP / Investors | Final | Submitted [date] | [file] |
+| Board Strategy Deck | Board | Final 1.0 | Board approved [date] | [file] |
+| Net Zero Roadmap | CSO + Finance | Final 1.0 | Approved [date] | [file] |
 
-## Quality Metrics
-- **First-pass QA rate**: [X]%
-- **Average retries**: [N]
-- **Tasks completed**: [X/Y]
-- **Story points delivered**: [N]
+### Greenwashing Audit Summary
+- Claims audited: [X] | Passed: [X] | Revised: [X] | Removed: [X]
+- All external deliverables: CLEARED | Audit report: [file]
 
-## Carried Over to Next Sprint
-| Task ID | Description | Reason | Priority |
-|---------|-------------|--------|----------|
-| [ID] | [Description] | [Why not completed] | [RICE score] |
+### Recommended Next Steps (Year 2)
 
-## Retrospective Insights
-**What went well**: [Key successes]
-**What to improve**: [Key improvements]
-**Action items**: [Specific changes for next sprint]
+1. Data quality improvement: [Top 3 DQS improvements]
+2. SBTi validation follow-up: expected [date]
+3. CDP score improvement: [specific areas]
+4. CSRD assurance upgrade: plan for reasonable assurance in Year [X]
+5. Base year restatement: recalculation policy in writing at [file] — apply if M&A occurs
 
-## Next Sprint Preview
-**Sprint goal**: [Proposed goal]
-**Key tasks**: [Top priority items]
-**Dependencies**: [Cross-team dependencies]
+### Engagement Archive
+Documentation: [Location] | Master data table: [File] | Audit records: [File] | Evidence package: [File]
 ```
-
----
-
-## 7. Incident Handoff
-
-Use during incident response.
-
-```markdown
-# NEXUS Incident Handoff
-
-## Incident
-| Field | Value |
-|-------|-------|
-| **Severity** | [P0 / P1 / P2 / P3] |
-| **Detected by** | [Agent or system] |
-| **Detection time** | [Timestamp] |
-| **Assigned to** | [Agent Name] |
-| **Status** | [Investigating / Mitigating / Resolved / Post-mortem] |
-
-## Description
-**What happened**: [Clear description of the incident]
-**Impact**: [Who/what is affected and how severely]
-**Timeline**:
-- [HH:MM] — [Event]
-- [HH:MM] — [Event]
-- [HH:MM] — [Event]
-
-## Current State
-**Systems affected**: [List]
-**Workaround available**: [Yes/No — describe if yes]
-**Estimated resolution**: [Time estimate]
-
-## Actions Taken
-1. [Action taken and result]
-2. [Action taken and result]
-
-## Handoff Context
-**For next responder**:
-- [What's been tried]
-- [What hasn't been tried yet]
-- [Suspected root cause]
-- [Relevant logs/metrics to check]
-
-## Stakeholder Communication
-**Last update sent**: [Timestamp]
-**Next update due**: [Timestamp]
-**Communication channel**: [Where updates are posted]
-```
-
----
-
-## Usage Guide
-
-| Situation | Template to Use |
-|-----------|----------------|
-| Assigning work to another agent | Standard Handoff (#1) |
-| QA approves a task | QA PASS (#2) |
-| QA rejects a task | QA FAIL (#3) |
-| Task exceeds 3 retries | Escalation Report (#4) |
-| Moving between phases | Phase Gate Handoff (#5) |
-| End of sprint | Sprint Handoff (#6) |
-| System incident | Incident Handoff (#7) |
